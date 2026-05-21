@@ -78,6 +78,10 @@ export default function DetailPage() {
                         {game.genre}
                     </span>
 
+                    <span className="detail-genre">
+                        {game.mood.join(', ')}
+                    </span>
+
                     <h1 className="detail-title">
                         {game.title}
                     </h1>

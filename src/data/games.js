@@ -1,5 +1,3 @@
-import { small } from "framer-motion/client";
-
 export const GAMES = [
   {
     id: 1, 
@@ -25,7 +23,7 @@ export const GAMES = [
     gameMode: "Single-player / Co-op Online",
     description: "Um dos RPGs de ação mais aclamados de todos os tempos, o jogo transporta o jogador para as Vastidões Intermédias, um vasto mundo de fantasia sombria criado por Hidetaka Miyazaki e George R. R. Martin. Com total liberdade de exploração, você deve enfrentar semideuses em combates desafiadores, descobrir segredos em masmorras complexas e dominar diversas armas e magias para restaurar o Anel Prístino e se tornar o Lorde Prístino.",
     smallDescription: "Explore um universo de fantasia sombria desafiador criado por Hidetaka Miyazaki e George R. R. Martin.",
-    mood: ["desafiador", "exploração", "singleplayer"], 
+    mood: ['desafiador', 'exploração', 'ação', 'mundoAberto'],
     badge: "GOTY",
     features: [
       "Mundo aberto massivo com total liberdade de exploração",
@@ -58,7 +56,7 @@ export const GAMES = [
     gameMode: "Apenas Cooperativo (Local/Online)",
     description: "Vencedor do prêmio de Jogo do Ano, esta aventura de plataforma foi feita exclusivamente para ser jogada em dupla (cooperativo local ou online). A história acompanha Cody e May, um casal prestes a se separar que é transformado em bonecos por um feitiço. Para voltarem ao normal, eles precisam superar seus desentendimentos e enfrentar desafios brilhantes que mudam de mecânica a cada nova fase.",
     smallDescription: "A maior e mais criativa aventura cooperativa dos games. Trabalhe em equipe para superar desafios únicos e salvar um casamento em crise.",
-    mood: ["cooperativo", "casual", "história"], 
+    mood: ['cooperativo', 'casual', 'história'],   
     badge: "Co-op Perfeito",
     features: [
       "Jogabilidade 100% cooperativa do início ao fim",
@@ -91,7 +89,7 @@ export const GAMES = [
     gameMode: "Single-player",
     description: "Um RPG de ação de mundo aberto ambientado em Night City, uma metrópole obcecada por poder, glamour e modificações corporais. Você joga como V, um mercenário fora da lei atrás de um implante único que carrega a chave para a imortalidade. O game oferece imensa liberdade de escolha, permitindo que você personalize suas habilidades cibernéticas e decida como explorar e impactar uma das cidades mais densas e vivas dos videogames.",
     smallDescription: "Sobreviva na megalópole futurista de Night City. Modifique seu body com implantes cibernéticos e defina o seu próprio destino.",
-    mood: ["exploração", "história", "ação"], 
+    mood: ['fps', 'história', 'ação', 'mundoAberto'], 
     badge: "Redimido",
     features: [
       "Exploração ultra-vertical em Night City",
@@ -124,7 +122,7 @@ export const GAMES = [
     gameMode: "Single-player",
     description: "Um metroidvania em 2D com estilo artístico desenhado à mão que se passa no vasto e interconectado reino em ruínas de Hallownest. No controle de um cavaleiro misterioso, você vai explorar cavernas tortuosas, lutar contra mais de 130 inimigos e chefes bizarros, e adquirir novas habilidades e feitiços para abrir caminhos antes inacessíveis. O jogo é amplamente elogiado por sua atmosfera imersiva, trilha sonora melancólica e jogabilidade precisa e desafiadora.",
     smallDescription: "Explore as ruínas esquecidas de um vasto reino de insetos. Enfrente criaturas corrompidas e desvende mistérios ancestrais.",
-    mood: ["desafiador", "exploração", "singleplayer"], 
+    mood: ['desafiador', 'exploração', 'sombrio', 'mundoAberto'], 
     badge: "Indie Gem",
     features: [
       "Combate em plataforma 2D preciso com esquivas e golpes fluidos",
@@ -157,7 +155,7 @@ export const GAMES = [
     gameMode: "Single-player / Co-op Online",
     description: "Um RPG de simulação da vida no campo extremamente charmoso e completo. Após herdar o antigo lote de terra do seu avô, você decide deixar o trabalho estressante de escritório para trás e recomeçar do zero. O jogo dá total liberdade para você aprender a viver da terra, minerar recursos preciosos, combater monstros em cavernas, pescar nos rios locais e até mesmo construir relacionamentos ou se casar com os moradores da carismática Vila Pelicano.",
     smallDescription: "Herde a antiga fazenda do seu avô e comece uma nova vida. Cultive a terra, crie animais e faça parte de uma comunidade acolhedora.",
-    mood: ["relaxante", "casual", "cooperativo"], 
+    mood: ['relaxante', 'casual', 'cooperativo'], 
     badge: "Eterno Clássico",
     features: [
       "Customização e gerenciamento completo de fazendas e safras",
@@ -190,7 +188,7 @@ export const GAMES = [
     gameMode: "Single-player",
     description: "A épica conclusão da jornada nórdica de Kratos e Atreus. Enquanto as forças de Asgard se preparam para uma guerra profetizada que destruirá o mundo, pai e filho precisam explorar todos os Nove Reinos em busca de respostas e aliados. Juntos, eles enfrentarão deuses nórdicos impiedosos e monstros mitológicos em um combate visceral e cinematográfico focado na família e no destino.",
     smallDescription: "A épica conclusão da saga nórdica de Kratos. Enfrente as forças de Asgard e mude o destino dos Nove Reinos.",
-    mood: ["ação", "história", "singleplayer"], 
+    mood: ['ação', 'história', 'desafiador'], 
     badge: "Épico",
     features: [
       "Combate brutal com o Machado Leviatã e as Lâminas do Caos",
@@ -223,7 +221,7 @@ export const GAMES = [
     gameMode: "Co-op Online (Até 4 jogadores)",
     description: "Um jogo de sobrevivência cooperativo e caótico onde você e sua equipe são trabalhadores contratados pela 'The Company'. Sua missão é explorar luas industrializadas abandonadas para coletar sucata e atingir a cota de lucro exigida. O grande problema são as terríveis armadilhas, a escuridão absoluta e as criaturas letais que começam a caçar vocês assim que a noite cai.",
     smallDescription: "Colete sucata em luas alienígenas sinistras para bater suas metas corporativas. Sobreviva com seus amigos se puder.",
-    mood: ["cooperativo", "caótico", "horror"], 
+    mood: ['cooperativo', 'sombrio', 'casual', 'exploração'], 
     badge: "Viral",
     features: [
       "Bate-papo de voz por proximidade realista, aumentando a imersão e o terror",
@@ -256,7 +254,7 @@ export const GAMES = [
     gameMode: "Single-player",
     description: "Um roguelike de ação rápido que combina os melhores aspectos dos jogos aclamados da Supergiant Games. No papel de Zagreu, o príncipe imortal do Submundo, você empunhará os poderes e as armas míticas do Olimpo para se libertar das garras do próprio Deus dos Mortos, enquanto se fortalece e descobre mais segredos da história a cada tentativa de fuga.",
     smallDescription: "Batalhe para sair do submundo grego em um roguelike de ação frenético com narrativa rica e viciante.",
-    mood: ["desafiador", "ação", "replay"], 
+    mood: ['desafiador', 'ação', 'história'], 
     badge: "Must Play",
     features: [
       "Combate hack-and-slash extremamente responsivo e satisfatório",
@@ -289,7 +287,7 @@ export const GAMES = [
     gameMode: "Single-player / Co-op Online",
     description: "Um jogo de tiro em primeira pessoa cooperativo de ficção científica. Junte-se a uma equipe de anões espaciais durões e explore sistemas de cavernas totalmente destrutíveis e gerados proceduralmente. Trabalhe em equipe para minerar recursos raros, utilizar equipamentos de alta tecnologia e repelir hordas intermináveis de monstros alienígenas insectoides.",
     smallDescription: "Anões espaciais, ambientes 100% destrutíveis e hordas alienígenas no cooperativo de ficção científica definitivo.",
-    mood: ["cooperativo", "ação", "casual"], 
+    mood: ['cooperativo', 'ação'], 
     badge: "Rock and Stone!",
     features: [
       "Quatro classes únicas com ferramentas e armas de mineração exclusivas",
@@ -320,7 +318,7 @@ export const GAMES = [
     gameMode: "Single-player",
     description: 'Acelere rumo a novos horizontes em uma experiência de plataforma inédita! Enfrente hordas de inimigos poderosos e explore um mundo impressionante cheio de ação, mistério e cenários deslumbrantes. Corra em alta velocidade pelas cinco ilhas de Starfall Islands e descubra mistérios ancestrais com a jogabilidade de zonas abertas.',
     smallDescription: "Explore ilhas gigantescas cheias de mistérios e corra na velocidade da luz em zonas abertas inéditas.",
-    mood: ['fast', 'adventure', 'openworld'],
+    mood: ['ação', 'exploração', 'casual', 'mundoAberto', 'relaxante'],
     features: [
       "Estreia do formato de Zonas Abertas com liberdade total de corrida",
       "Sistema de combate reformulado com esquivas, defesas e combos de habilidades",
@@ -351,7 +349,7 @@ export const GAMES = [
     gameMode: "Single-player / Multiplayer Online",
     description: 'Prepare-se para acelerar e driftar através de fendas dimensionais! Neste eletrizante jogo de corrida arcade, os corredores viajam por portais conhecidos como "Travel Rings" para competir em pistas dinâmicas que misturam cenários clássicos com novas realidades. Trazendo o maior elenco já visto na série com mais de 20 personagens jogáveis, o game permite uma customização profunda de veículos com dezenas de karts e acessórios que alteram completamente o estilo de pilotagem em terra, água ou ar.',
     smallDescription: 'Acelere através de fendas dimensionais! Corra com o maior elenco da franquia em karts totalmente customizáveis.',
-    mood: ['fast', 'competitive', 'multiplayer'],
+    mood: ['competitivo', 'velocidade', 'carros'],
     features: [
       "Mecânica exclusiva de fendas dimensionais que altera o traçado em tempo real",
       "Customização profunda de karts influenciando atributos de velocidade e controle",
@@ -382,7 +380,7 @@ export const GAMES = [
     gameMode: "Single-player / Multiplayer Online",
     description: 'O simulador de corrida definitivo da PlayStation combina a clássica progressão de carreira da franquia com o foco competitivo no automobilismo virtual. O jogo é uma verdadeira celebração da cultura automotiva, oferecendo centenas de carros meticulosamente detalhados, física de direção refinada e um impressionante sistema de clima dinâmico que altera drasticamente a aderência nas pistas.',
     smallDescription: 'O simulador de corrida definitivo da PlayStation. Pilote centenas de carros icônicos com física ultra-realista e gráficos impressionantes.',
-    mood: ['realistic', 'competitive', 'cars'],
+    mood: ['competitivo', 'realista', 'ação', 'carros'],
     features: [
       "Física de simulação automotiva hiper-realista com desgaste de pneus",
       "Modo GT Cafe focado no colecionismo e aprendizado sobre marcas históricas",
@@ -413,7 +411,7 @@ export const GAMES = [
     gameMode: "Single-player / Multiplayer Online",
     description: 'Sua derradeira aventura Horizon espera por você! Explore as paisagens de mundo aberto vibrantes e em constante evolução do México. Pilote centenas dos melhores carros do mundo em corridas insanas, desafios épicos e expedições por desertos, selvas tropicais, cidades históricas e até mesmo no topo de um vulcão ativo.',
     smallDescription: "Explore paisagens incríveis e pilote centenas de carros icônicos em um festival automotivo em mundo aberto no México.",
-    mood: ['cars', 'openworld', 'relax'],
+    mood: ['exploração', 'relaxante', 'mundoAberto', 'carros'],
     features: [
       "Mundo aberto massivo ambientado em um México ricamente detalhado",
       "Campanha de Expedições recompensadora focada em turismo automotivo",
@@ -444,7 +442,7 @@ export const GAMES = [
     gameMode: "Single-player",
     description: 'Entre na Hora Sombria e desperte as profundezas do seu coração. Persona 3 Reload é uma releitura cativante do RPG que definiu o gênero, renascido para a era moderna com gráficos de ponta, melhorias de usabilidade e uma trilha sonora inesquecível de J-Rock/Pop que embala uma jornada sombria de mistérios estudantis.',
     smallDescription: 'Viva uma jornada emocional inesquecível misturando gerenciamento de vida escolar e batalhas de turno sobrenaturais.',
-    mood: ['story', 'anime', 'rpg'],
+    mood: ['história', 'anime', 'sombrio', 'casual'],
     features: [
       "Visual reformulado em Unreal Engine com menus e interface ultra-estilizados",
       "Sistema de combate por turnos focado em explorar fraquezas elementais",
@@ -475,7 +473,7 @@ export const GAMES = [
     gameMode: "Single-player",
     description: 'Crivado de dívidas, o ex-agente Booker DeWitt tem apenas uma oportunidade de limpar sua ficha: resgatar Elizabeth, uma jovem misteriosa presa desde a infância na cidade flutuante de Columbia. Forçados a confiar um no outro, eles desenvolvem um forte laço enquanto lutam para sobreviver em trilhos aéreos suspensos e ambientes hostis em uma das histórias mais revolucionárias e premiadas dos FPS.',
     smallDescription: 'Explore a majestosa e perturbadora cidade flutuante de Columbia em uma narrativa icônica e inesquecível.',
-    mood: ['story', 'dark', 'fps'],
+    mood: ['história', 'sombrio', 'ação', 'fps'],
     features: [
       "Combate dinâmico usando trilhos aéreos (Sky-Lines) de alta velocidade",
       "Uso combinado de armas de fogo tradicionais com poderes especiais (Vigors)",
