@@ -41,17 +41,17 @@ export default function HomePage() {
                         <div className="col-lg-5">
                             <div className="floating-cards">
                                 <div className="feature-card feature-card-1">
-                                    <h4>Catálogo completo</h4>
+                                    <h3>Catálogo completo</h3>
                                     <p>Vários jogos para várias plataformas</p>
                                 </div>
 
                                 <div className="feature-card feature-card-2">
-                                    <h4>Multiplayer</h4>
+                                    <h3>Multiplayer</h3>
                                     <p>Jogue online com seus amigos</p>
                                 </div>
 
                                 <div className="feature-card feature-card-3">
-                                    <h4>Promoções</h4>
+                                    <h3>Promoções</h3>
                                     <p>Descontos exclusivos toda semana</p>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ export default function HomePage() {
                             />
 
                             <div className="preview-overlay">
-                                <h4>Cyberpunk 2077</h4>
+                                <h3>Cyberpunk 2077</h3>
                             </div>
                         </div>
 
@@ -164,7 +164,7 @@ export default function HomePage() {
                             />
 
                             <div className="preview-overlay">
-                                <h4>Gran Turismo 7</h4>
+                                <h3>Gran Turismo 7</h3>
                             </div>
                         </div>
 
@@ -175,7 +175,7 @@ export default function HomePage() {
                             />
 
                             <div className="preview-overlay">
-                                <h4>Sonic Frontiers</h4>
+                                <h3>Sonic Frontiers</h3>
                             </div>
                         </div>
                     </div>

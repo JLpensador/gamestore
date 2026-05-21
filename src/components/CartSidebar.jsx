@@ -82,12 +82,12 @@ export default function CartSidebar({ isOpen, onClose }) {
                         </div>
 
                         <div className="mt-4 pt-4 border-top border-secondary">
-                            <h4>
+                            <h3>
                                 Total:
                                 <span className="text-info ms-2">
                                     R$ {totalPrice.toFixed(2)}
                                 </span>
-                            </h4>
+                            </h3>
 
                             <button className="btn hero-button w-100 mt-3 py-3">
                                 Finalizar compra

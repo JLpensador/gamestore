@@ -6,7 +6,7 @@ export default function GameCard({ game }) {
         <div className="col-12 col-md-6 col-lg-4">
             <div className="card bg-dark border-secondary h-100 shadow game-card">
                 <img
-                    src={game.image}
+                    src={game.images?.[0] || game.image}
                     className="card-img-top"
                     alt={game.title}
                 />
@@ -20,7 +20,7 @@ export default function GameCard({ game }) {
                     <h5 className="card-title text-light">{game.title}</h5>
 
                     <p className="card-text text-secondary flex-grow-1">
-                        {game.description}
+                        {game.smallDescription}
                     </p>
 
                     <div className="d-flex justify-content-between align-items-center mt-3">

@@ -26,7 +26,11 @@ export default function QuizPage() {
                 </h1>
 
                 <div className="card bg-dark border-primary mx-auto" style={{ maxWidth: '500px' }}>
-                    <img src={result.image} className="card-img-top" alt={result.title} />
+                    <img
+                        src={result.images?.[0] || result.image}
+                        className="card-img-top"
+                        alt={result.title}
+                    />
 
                     <div className="card-body">
                         <h3 className="text-light">{result.title}</h3>
