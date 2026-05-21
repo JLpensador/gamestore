@@ -37,7 +37,11 @@ export default function CartSidebar({ isOpen, onClose }) {
                         <div className="d-flex flex-column gap-3">
                             {cartItems.map((item) => (
                                 <div className="cart-item" key={item.id}>
-                                    <img src={item.image} alt={item.title} />
+                                    <img
+                                        src={item.images?.[0] || item.image}
+                                        className="card-img-top"
+                                        alt={item.title}
+                                    />
 
                                     <div className="flex-grow-1">
                                         <h6>{item.title}</h6>
