@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { GAMES } from '../data/games'
 
 export default function HomePage() {
     return (
@@ -24,7 +25,10 @@ export default function HomePage() {
                             </p>
 
                             <div className="d-flex gap-3 flex-wrap">
-                                <Link to="/games" className="btn hero-button px-5 py-3">
+                                <Link
+                                    to="/games"
+                                    className="btn hero-button px-5 py-3"
+                                >
                                     Explorar jogos →
                                 </Link>
 
@@ -62,6 +66,7 @@ export default function HomePage() {
             <section className="py-5">
                 <div className="container">
                     <div className="row g-4">
+
                         <div className="col-md-4">
                             <div className="modern-box h-100">
                                 <i className="bi bi-controller feature-icon"></i>
@@ -100,6 +105,7 @@ export default function HomePage() {
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -107,7 +113,10 @@ export default function HomePage() {
             <section className="py-5">
                 <div className="container">
                     <div className="about-section text-center">
-                        <span className="section-tag">SOBRE</span>
+
+                        <span className="section-tag">
+                            SOBRE
+                        </span>
 
                         <h2 className="section-title mt-3 mb-4">
                             Uma plataforma criada
@@ -120,66 +129,57 @@ export default function HomePage() {
                             experiências multiplayer e recomendações personalizadas
                             em um único lugar.
                         </p>
+
                     </div>
                 </div>
             </section>
 
             <section className="py-5 pb-0">
                 <div className="container">
+
                     <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
                         <div>
-                            <span className="section-tag">CATÁLOGO</span>
+
+                            <span className="section-tag">
+                                CATÁLOGO
+                            </span>
 
                             <h2 className="section-title mt-2">
                                 Explore os jogos
                             </h2>
+
                         </div>
 
-                        <Link to="/games" className="btn hero-button px-4 py-2">
+                        <Link
+                            to="/games"
+                            className="btn hero-button px-4 py-2"
+                        >
                             Ver catálogo completo
                         </Link>
                     </div>
 
                     <div className="preview-grid">
-                        <div className="preview-card">
-                            <img
-                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg"
-                                alt="Cyberpunk"
-                            />
 
-                            <a href="/game/3" data-discover="true">
-                                <div className="preview-overlay">
-                                    <h3>Cyberpunk 2077</h3>
-                                </div>
-                            </a>
-                        </div>
+                        {GAMES.slice(0, 3).map((game) => (
+                            <div
+                                className="preview-card"
+                                key={game.id}
+                            >
+                                <Link to={`/game/${game.id}`}>
 
+                                    <img
+                                        src={game.images?.[0] || game.image}
+                                        alt={game.title}
+                                    />
 
-                        <div className="preview-card">
-                            <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202109%2F1321%2F3GEdKTGktTBsZ8Sj9yIWnr2f.jpg"
-                                alt="Gran Turismo 7"
-                            />
+                                    <div className="preview-overlay">
+                                        <h3>{game.title}</h3>
+                                    </div>
 
-                            <a href="/game/12" data-discover="true">
-                                <div className="preview-overlay">
-                                    <h3>Gran Turismo 7</h3>
-                                </div>
-                            </a>
-                        </div>
+                                </Link>
+                            </div>
+                        ))}
 
-                        <div className="preview-card">
-                            <img
-                                src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1237320/header.jpg"
-                                alt="Sonic Frontiers"
-                            />
-
-                            <a href="/game/10" data-discover="true">
-                                <div className="preview-overlay">
-                                    <h3>Sonic Frontiers</h3>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </section>
