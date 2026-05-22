@@ -621,7 +621,7 @@ body {
   );
 }
 
-/* ===== IMAGE ===== */
+/* ===== IMAGEM ===== */
 
 .detail-image-wrapper {
   position: sticky;
@@ -676,7 +676,7 @@ body {
   border-color: rgba(139, 92, 246, 0.3);
 }
 
-/* ===== TEXT ===== */
+/* ===== TEXTO ===== */
 
 .detail-genre {
   display: inline-block;
@@ -748,7 +748,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* ===== PLATFORM ===== */
+/* ===== PLATAFORMA ===== */
 
 .platform-btn {
   padding: 15px 32px;
@@ -777,7 +777,7 @@ body {
   box-shadow: 0 0 30px rgba(139, 92, 246, 0.25);
 }
 
-/* ===== CART BUTTON ===== */
+/* ===== BOTÃO DO CARRINHO ===== */
 
 .detail-cart-button {
   height: 72px;
@@ -807,7 +807,7 @@ body {
   box-shadow: 0 0 50px rgba(139, 92, 246, 0.4);
 }
 
-/* ===== ABOUT ===== */
+/* ===== SOBRE ===== */
 
 .detail-about h3 {
   color: white;

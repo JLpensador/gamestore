@@ -33,7 +33,6 @@ export default function DetailPage() {
 
     return (
         <div className="game-detail-page">
-            {/* BACKGROUND */}
             <div
                 className="detail-background"
                 style={{
@@ -44,7 +43,6 @@ export default function DetailPage() {
             <div className="detail-overlay"></div>
 
             <div className="container py-5 position-relative">
-                {/* BANNER */}
                 <div className="banner-wrapper mb-5">
                     <img
                         src={selectedImage}
@@ -72,7 +70,6 @@ export default function DetailPage() {
                     ))}
                 </div>
 
-                {/* CONTENT */}
                 <div className="detail-content">
                     <span className="detail-genre">
                         {game.genre}
@@ -86,7 +83,6 @@ export default function DetailPage() {
                         {game.title}
                     </h1>
 
-                    {/* RATING */}
                     <div className="detail-rating mb-4">
                         <div className="stars">
                             ★★★★★
@@ -133,7 +129,6 @@ export default function DetailPage() {
                         </div>
                     </div>
 
-                    {/* BUTTON */}
                     <button
                         className="btn detail-cart-button mt-4"
                         onClick={() => addToCart(game)}
@@ -177,7 +172,6 @@ export default function DetailPage() {
                         </div>
                     </div>
 
-                    {/* FEATURES */}
                     <div className="mt-5">
                         <h3 className="fw-bold mb-4">
                             Principais Características
@@ -192,7 +186,6 @@ export default function DetailPage() {
                         </ul>
                     </div>
 
-                    {/* REVIEWS */}
                     <div className="review-box mt-5">
                         <div className="review-score">
                             <h1> {game.rating}</h1>

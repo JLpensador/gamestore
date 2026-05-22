@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 export default function HomePage() {
     return (
         <>
-            {/* HERO */}
             <section className="hero-modern d-flex align-items-center">
                 <div className="container">
                     <div className="row align-items-center g-5">
@@ -60,7 +59,6 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* FEATURES */}
             <section className="py-5">
                 <div className="container">
                     <div className="row g-4">
@@ -106,7 +104,6 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* ABOUT */}
             <section className="py-5">
                 <div className="container">
                     <div className="about-section text-center">
@@ -127,7 +124,6 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* PREVIEW */}
             <section className="py-5 pb-0">
                 <div className="container">
                     <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
@@ -151,9 +147,11 @@ export default function HomePage() {
                                 alt="Cyberpunk"
                             />
 
-                            <div className="preview-overlay">
-                                <h3>Cyberpunk 2077</h3>
-                            </div>
+                            <a href="/game/3" data-discover="true">
+                                <div className="preview-overlay">
+                                    <h3>Cyberpunk 2077</h3>
+                                </div>
+                            </a>
                         </div>
 
 
@@ -163,9 +161,11 @@ export default function HomePage() {
                                 alt="Gran Turismo 7"
                             />
 
-                            <div className="preview-overlay">
-                                <h3>Gran Turismo 7</h3>
-                            </div>
+                            <a href="/game/12" data-discover="true">
+                                <div className="preview-overlay">
+                                    <h3>Gran Turismo 7</h3>
+                                </div>
+                            </a>
                         </div>
 
                         <div className="preview-card">
@@ -174,9 +174,11 @@ export default function HomePage() {
                                 alt="Sonic Frontiers"
                             />
 
-                            <div className="preview-overlay">
-                                <h3>Sonic Frontiers</h3>
-                            </div>
+                            <a href="/game/10" data-discover="true">
+                                <div className="preview-overlay">
+                                    <h3>Sonic Frontiers</h3>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

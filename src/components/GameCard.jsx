@@ -5,11 +5,15 @@ export default function GameCard({ game }) {
     return (
         <div className="col-12 col-md-6 col-lg-4">
             <div className="card bg-dark border-secondary h-100 shadow game-card">
-                <img
-                    src={game.images?.[0] || game.image}
-                    className="card-img-top"
-                    alt={game.title}
-                />
+                <Link
+                    to={`/game/${game.id}`}
+                >
+                    <img
+                        src={game.images?.[0] || game.image}
+                        className="card-img-top"
+                        alt={game.title}
+                    />
+                </Link>
 
                 <div className="card-body d-flex flex-column">
                     <div className="d-flex justify-content-between align-items-center mb-2">
